@@ -38,7 +38,8 @@ body {
 }
 
 .hero-container {
-    background-image: linear-gradient(rgba(16, 163, 199, 0.7), rgba(16, 163, 199, 0.7)), url("Assets/heroimg.png");
+    background-image: linear-gradient(rgba(16, 163, 199, 0.65), rgba(16, 163, 199, 0.65)), url("Assets/heroimg.png");
+    background-color: var(--myblue);
     height: 500px;
     width: 100%;
     background-position: center;
@@ -49,10 +50,16 @@ body {
     color: white;
 }
 
+.hero-image img {
+    height: auto;
+    width: 20%;
+    flex: 1 1 140px;
+}
+
 .hero-text {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 70%;
     transform: translate(-50%, -50%);
 }
 
@@ -74,18 +81,21 @@ body {
     }
 }
 
+.container h1 {
+    text-align: center;
+    padding-top: 64px;
+}
+
 .card-container {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 40px;
+    padding: 20px 40px 40px;
 }
 
 .card-content {
     padding: 1rem 15px;
-    /* background-color: var(--myblue);
-    color: white; */
     background-color: white;
     color: black;
     border-top:#10a3c7 solid 6px;
@@ -203,7 +213,7 @@ body {
     background-color: var(--myblue);
     color: white;
     width: 100%;
-    height: 140px;
+    height: auto;
     display: flex;
 }
 
@@ -225,4 +235,5 @@ body {
 .copyright {
     width: 55%;
     padding-top: 60px;
+    padding-left: 20px;
 }
